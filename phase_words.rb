@@ -1,5 +1,15 @@
 #!/usr/bin/ruby
 
+# Challenge: make a function which "phases" two given words through 
+# eachoher, like so:
+
+  # Word 1: Hello
+  # Word 2: World
+
+  # Output: 
+    # HelloWorld, HellWoorld, HelWloorld, HeWlolrold, HWeolrllod, 
+    # WHoerllldo, WoHrelldlo, WorHledllo, WorlHdello, WorldHello
+
 class Array
   def swap!(a,b)
     self[a], self[b] = self[b], self[a]
