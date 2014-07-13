@@ -1,12 +1,13 @@
 #!/usr/bin/ruby
 
 # Given an Array A[], find the maximum j - i such that A[j] > A[i]. 
-# For example Input {34,8,10,3,2,80,30,33,1} and Output 6 (j=7(33), i=1(34)) 
+# For example Input {34,8,10,3,2,80,30,33,1} and Output 6 (j=7(3), i=1(8)) 
 # Time Complexity should be less then O(n^2)
 
 class Array
   def maxgap
     adjusted_size = self.size - 1
+    puts adjusted_size
     # If all elements are equal, return zero
     if self.count(self[0]) == self.size
       return 0
